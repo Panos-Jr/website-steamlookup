@@ -460,7 +460,7 @@ export default function HomePage() {
           </div>
 
           <a
-            href="https://discord.gg/sailing-support"
+            href="https://discord.gg/CYR8WvkejJ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-discord"
