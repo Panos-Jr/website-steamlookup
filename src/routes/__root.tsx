@@ -6,7 +6,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'Steam Lookup — Instant Game Intelligence' },
+      { title: 'Steam Lookup' },
       { name: 'description', content: 'Instantly look up live game details, DRM info, and download sources for any Steam game.' },
     ],
     links: [
