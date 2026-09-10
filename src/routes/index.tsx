@@ -370,16 +370,6 @@ export default function HomePage() {
             }} />
 
             <div style={{ position: 'relative' }}>
-              <div style={{ marginBottom: 12 }}>
-                <span className="badge" style={{
-                  background: 'rgba(40,200,100,0.1)',
-                  border: '1px solid rgba(40,200,100,0.25)',
-                  color: '#4cdb7f',
-                }}>
-                  <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#4cdb7f', display: 'inline-block' }} />
-                  Free download
-                </span>
-              </div>
               <h2 style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'clamp(24px, 4vw, 36px)',
@@ -402,11 +392,8 @@ export default function HomePage() {
                 style={{ whiteSpace: 'nowrap', fontSize: 15, padding: '15px 28px' }}
               >
                 <DownloadIcon size={18} />
-                Download .exe
+                Download
               </a>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-muted)', textAlign: 'center' }}>
-                Windows 10 / 11
-              </span>
             </div>
           </div>
         </div>
