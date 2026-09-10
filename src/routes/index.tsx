@@ -455,7 +455,7 @@ export default function HomePage() {
               Join the community
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: 15, margin: 0, lineHeight: 1.6, maxWidth: 420 }}>
-              Have questions? Join the <strong style={{ color: 'var(--text-primary)' }}>Sailing Support</strong> Discord server for help, feedback, and updates.
+              Have questions? Join the <strong style={{ color: 'var(--text-primary)' }}>Hideout</strong>.
             </p>
           </div>
 
@@ -466,13 +466,13 @@ export default function HomePage() {
             className="btn-discord"
           >
             <DiscordIcon size={20} />
-            Join the server — Sailing Support
+            Join the Hideout
           </a>
 
           <div style={{ marginTop: 20, paddingTop: 24, borderTop: '1px solid var(--border)', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
             <div style={{ color: 'var(--steam-blue)', opacity: 0.7 }}><SteamIcon size={15} /></div>
             <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-muted)' }}>
-              SteamLookup — Built by Sailing Support
+              SteamLookup
             </span>
           </div>
         </div>
