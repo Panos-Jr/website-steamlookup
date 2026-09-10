@@ -398,29 +398,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Discord / Footer */}
-      <footer style={{ borderTop: '1px solid var(--border)', background: 'var(--bg-card)', padding: '60px 24px' }}> 
-        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28, textAlign: 'center' }}> 
-          {/* Upper content area (if any other elements are added later) */}
-        </div> 
-        
-        <div style={{ marginTop: 20, paddingTop: 24, borderTop: '1px solid var(--border)', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 12 }}> 
-          
-          {/* Clickable Discord Icon directly above SteamLookup */}
-          <a href="https://discord.gg/CYR8WvkejJ" target="_blank" rel="noopener noreferrer" className="btn-discord" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#7289da', textDecoration: 'none', transition: 'opacity 0.2s' }} > 
-            <DiscordIcon size={24} /> 
-          </a>
-      
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
-            <div style={{ color: 'var(--steam-blue)', opacity: 0.7 }}><SteamIcon size={15} /></div> 
-            <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--text-muted)' }}> 
-              SteamLookup 
-            </span> 
-          </div>
-        </div> 
-      </footer>
-
     </div>
   )
 }
