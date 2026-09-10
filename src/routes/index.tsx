@@ -433,21 +433,6 @@ export default function HomePage() {
             <DiscordIcon size={30} />
           </div>
 
-          <div>
-            <h2 style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(22px, 4vw, 32px)',
-              fontWeight: 800,
-              margin: '0 0 10px',
-              letterSpacing: '-0.02em',
-            }}>
-              Join the community
-            </h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: 15, margin: 0, lineHeight: 1.6, maxWidth: 420 }}>
-              Have questions? Join the <strong style={{ color: 'var(--text-primary)' }}>Hideout</strong>.
-            </p>
-          </div>
-
           <a
             href="https://discord.gg/CYR8WvkejJ"
             target="_blank"
