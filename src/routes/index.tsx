@@ -400,32 +400,31 @@ export default function HomePage() {
       </section>
 
       {/* Discord / Footer */}
-      <footer style={{
-        borderTop: '1px solid var(--border)',
-        background: 'var(--bg-card)',
-        padding: '60px 24px',
-      }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28, textAlign: 'center' }}>
-          <div style={{
-            width: 64,
-            height: 64,
-            borderRadius: 16,
-            background: 'rgba(88,101,242,0.12)',
-            border: '1px solid rgba(88,101,242,0.25)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+      <footer style={{ borderTop: '1px solid var(--border)', background: 'var(--bg-card)', padding: '60px 24px' }}> 
+        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28, textAlign: 'center' }}> 
+    
+        <a 
+          href="https://discord.gg/CYR8WvkejJ" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn-discord"
+          style={{ 
+            width: 64, 
+            height: 64, 
+            borderRadius: 16, 
+            background: 'rgba(88,101,242,0.12)', 
+            border: '1px solid rgba(88,101,242,0.25)', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
             color: '#7289da',
-          }}>
-            <a
-            href="https://discord.gg/CYR8WvkejJ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-discord"
-            >
-              <DiscordIcon size={30} />
-            </a>
-          </div>
+            textDecoration: 'none'
+          }} 
+        > 
+          <DiscordIcon size={30} /> 
+        </a> 
+
+      </div>
 
           <div style={{ marginTop: 20, paddingTop: 24, borderTop: '1px solid var(--border)', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
             <div style={{ color: 'var(--steam-blue)', opacity: 0.7 }}><SteamIcon size={15} /></div>
