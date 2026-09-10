@@ -417,18 +417,15 @@ export default function HomePage() {
             justifyContent: 'center',
             color: '#7289da',
           }}>
-            <DiscordIcon size={30} />
-          </div>
-
-          <a
+            <a
             href="https://discord.gg/CYR8WvkejJ"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-discord"
-          >
-            <DiscordIcon size={20} />
-            Join the Hideout
-          </a>
+            >
+              <DiscordIcon size={30} />
+            </a>
+          </div>
 
           <div style={{ marginTop: 20, paddingTop: 24, borderTop: '1px solid var(--border)', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
             <div style={{ color: 'var(--steam-blue)', opacity: 0.7 }}><SteamIcon size={15} /></div>
