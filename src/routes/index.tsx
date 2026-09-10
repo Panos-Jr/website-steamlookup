@@ -392,18 +392,7 @@ export default function HomePage() {
               <p style={{ color: 'var(--text-secondary)', fontSize: 15, lineHeight: 1.6, margin: '0 0 20px', maxWidth: 480 }}>
                 Windows portable app — no installation required. Just download and run.
               </p>
-              <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap' }}>
-                {[
-                  { label: 'Platform', value: 'Windows' },
-                  { label: 'Type', value: 'Portable EXE' },
-                  { label: 'Price', value: 'Free' },
-                ].map(item => (
-                  <div key={item.label}>
-                    <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-muted)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 4 }}>{item.label}</div>
-                    <div style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-primary)', fontWeight: 700 }}>{item.value}</div>
-                  </div>
-                ))}
-              </div>
+              
             </div>
 
             <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'flex-end' }}>
