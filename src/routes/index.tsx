@@ -387,7 +387,7 @@ export default function HomePage() {
 
             <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'flex-end' }}>
               <a
-                href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.6/SteamLookup.exe"
+                href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.7/steam_lookup.zip"
                 className="btn-primary"
                 style={{ whiteSpace: 'nowrap', fontSize: 15, padding: '15px 28px' }}
               >
