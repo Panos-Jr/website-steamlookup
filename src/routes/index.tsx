@@ -185,9 +185,9 @@ export default function HomePage() {
 
           {/* CTA buttons */}
           <div className="fade-up fade-up-4" style={{ display: 'flex', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
-            <a href="#download" className="btn-primary">
+            <a href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.7/SteamLookup_setup.exe" className="btn-primary">
               <DownloadIcon size={18} />
-              Download steam_lookup.zip
+              Download SteamLookup_setup.exe
             </a>
             <a href="#features" className="btn-secondary">
               See what it does
@@ -336,66 +336,6 @@ export default function HomePage() {
               </div>
             </a>
           ))}
-        </div>
-      </section>
-
-      {/* Download section */}
-      <section id="download" style={{ padding: '0 24px 100px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <div className="divider-label" style={{ marginBottom: 56 }}>
-            Get started
-          </div>
-
-          <div style={{
-            background: 'var(--bg-card)',
-            border: '1px solid var(--border)',
-            borderRadius: 16,
-            padding: 'clamp(32px, 5vw, 60px)',
-            display: 'grid',
-            gridTemplateColumns: '1fr auto',
-            gap: 40,
-            alignItems: 'center',
-            position: 'relative',
-            overflow: 'hidden',
-          }}>
-            <div style={{
-              position: 'absolute',
-              top: -80,
-              right: -80,
-              width: 300,
-              height: 300,
-              borderRadius: '50%',
-              background: 'radial-gradient(circle, rgba(77,157,224,0.1) 0%, transparent 70%)',
-              pointerEvents: 'none',
-            }} />
-
-            <div style={{ position: 'relative' }}>
-              <h2 style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(24px, 4vw, 36px)',
-                fontWeight: 800,
-                margin: '0 0 14px',
-                letterSpacing: '-0.02em',
-              }}>
-                SteamLookup_setup.exe
-              </h2>
-              <p style={{ color: 'var(--text-secondary)', fontSize: 15, lineHeight: 1.6, margin: '0 0 20px', maxWidth: 480 }}>
-                Windows installer
-              </p>
-              
-            </div>
-
-            <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'flex-end' }}>
-              <a
-                href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.7/SteamLookup_setup.exe"
-                className="btn-primary"
-                style={{ whiteSpace: 'nowrap', fontSize: 15, padding: '15px 28px' }}
-              >
-                <DownloadIcon size={18} />
-                Download
-              </a>
-            </div>
-          </div>
         </div>
       </section>
     </div>
