@@ -377,17 +377,17 @@ export default function HomePage() {
                 margin: '0 0 14px',
                 letterSpacing: '-0.02em',
               }}>
-                steam_lookup.zip
+                SteamLookup_setup.exe
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: 15, lineHeight: 1.6, margin: '0 0 20px', maxWidth: 480 }}>
-                Windows portable app — no installation required. Just download and run.
+                Windows installer
               </p>
               
             </div>
 
             <div style={{ flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'flex-end' }}>
               <a
-                href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.7/steam_lookup.zip"
+                href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.7/SteamLookup_setup.exe"
                 className="btn-primary"
                 style={{ whiteSpace: 'nowrap', fontSize: 15, padding: '15px 28px' }}
               >
