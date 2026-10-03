@@ -187,7 +187,7 @@ export default function HomePage() {
           <div className="fade-up fade-up-4" style={{ display: 'flex', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
             <a href="#download" className="btn-primary">
               <DownloadIcon size={18} />
-              Download SteamLookup.exe
+              Download steam_lookup.zip
             </a>
             <a href="#features" className="btn-secondary">
               See what it does
@@ -377,7 +377,7 @@ export default function HomePage() {
                 margin: '0 0 14px',
                 letterSpacing: '-0.02em',
               }}>
-                SteamLookup.exe
+                steam_lookup.zip
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: 15, lineHeight: 1.6, margin: '0 0 20px', maxWidth: 480 }}>
                 Windows portable app — no installation required. Just download and run.
