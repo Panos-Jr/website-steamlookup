@@ -178,7 +178,7 @@ export default function HomePage() {
 
           {/* CTA buttons */}
           <div className="fade-up fade-up-4" style={{ display: 'flex', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
-            <a href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.8/SteamLookup_setup.exe" className="btn-primary">
+            <a href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.9/SteamLookup_setup.exe" className="btn-primary">
               <DownloadIcon size={18} />
               Download SteamLookup_setup.exe
             </a>
