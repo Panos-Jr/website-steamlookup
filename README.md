@@ -2,6 +2,8 @@
 
 Landing page for **SteamLookup** — a free Windows utility that pulls live game details, DRM information, and download sources for any Steam game, with direct links to PCGamingWiki and Steam.
 
+Our Discord: https://discord.gg/pJC8mqQAQC
+
 ## Tech Stack
 
 - **Framework**: TanStack Start (React, SSR)
