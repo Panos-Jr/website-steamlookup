@@ -61,6 +61,32 @@ function ZapIcon({ size = 20 }: { size?: number }) {
   )
 }
 
+function CloudIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+    </svg>
+  )
+}
+
+function CloudRedirectIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z" />
+      <polyline points="12 12 15 15 12 18" />
+      <line x1="8" y1="15" x2="15" y2="15" />
+    </svg>
+  )
+}
+
+function GithubIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" />
+    </svg>
+  )
+}
+
 function DiscordIcon({ size = 22 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
@@ -225,7 +251,17 @@ export default function HomePage() {
             {
               icon: <ZapIcon size={20} />,
               title: 'Lightweight & Fast',
-              desc: 'A single portable .exe with no installer, no bloat. Runs instantly on any Windows PC.',
+              desc: 'A small, quick-to-install Windows app with a simple setup installer. No bloat, launches instantly, and stays out of your way.',
+            },
+            {
+              icon: <CloudIcon size={20} />,
+              title: 'Save Sync with Google Drive',
+              desc: 'Back up and sync your game saves to Google Drive, configured per game. Pick which titles to sync and pick up where you left off on any PC.',
+            },
+            {
+              icon: <CloudRedirectIcon size={20} />,
+              title: 'CloudRedirect Support',
+              desc: 'Built-in CloudRedirect support so your cloud saves can be redirected and kept in sync without manual file juggling.',
             },
           ].map((f) => (
             <div key={f.title} className="feature-card">
@@ -275,6 +311,15 @@ export default function HomePage() {
               iconBg: 'var(--steam-blue-glow)',
               iconBorder: 'rgba(77,157,224,0.2)',
               iconColor: 'var(--steam-blue)',
+            },
+            {
+              href: 'https://github.com/Panos-Jr/SteamLookup',
+              label: 'GitHub',
+              sublabel: 'github.com/Panos-Jr/SteamLookup',
+              icon: <GithubIcon size={18} />,
+              iconBg: 'rgba(255,255,255,0.06)',
+              iconBorder: 'rgba(255,255,255,0.15)',
+              iconColor: 'var(--text-primary)',
             },
           ].map((link) => (
             <a
@@ -338,6 +383,7 @@ export default function HomePage() {
           <div className="site-footer-links">
             <Link to="/terms" className="link-hover">Terms of Service</Link>
             <Link to="/privacy" className="link-hover">Privacy Policy</Link>
+            <a href="https://github.com/Panos-Jr/SteamLookup" target="_blank" rel="noopener noreferrer" className="link-hover">GitHub</a>
           </div>
         </div>
       </footer>
