@@ -1,6 +1,6 @@
 # SteamLookup
 
-Landing page for (https://github.com/Panos-Jr/SteamLookup)[**SteamLookup**] — a free Windows utility that pulls live game details, DRM information, and download sources for any Steam game, with direct links to PCGamingWiki and Steam.
+Landing page for [**SteamLookup**](https://github.com/Panos-Jr/SteamLookup) — a free Windows utility that pulls live game details, DRM information, and download sources for any Steam game, with direct links to PCGamingWiki and Steam.
 
 Our Discord: https://discord.gg/pJC8mqQAQC
 
