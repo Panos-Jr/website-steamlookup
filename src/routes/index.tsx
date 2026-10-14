@@ -95,10 +95,10 @@ function ChevronRightIcon({ size = 16 }: { size?: number }) {
     </svg>
   )
 }
-0
+
 export default function HomePage() {
   const [version, setVersion] = useState<string | null>(null)
-//obtain version
+
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/Panos-Jr/SteamLookup/refs/heads/main/version.txt')
       .then((res) => res.text())
@@ -159,18 +159,6 @@ export default function HomePage() {
         }} />
 
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', position: 'relative' }}>
-          {/* Badge */}
-          <div className="fade-up fade-up-1" style={{ marginBottom: 28, display: 'flex', justifyContent: 'center' }}>
-            <span className="badge" style={{
-              background: 'var(--steam-blue-glow)',
-              border: '1px solid rgba(77,157,224,0.25)',
-              color: 'var(--steam-blue)',
-            }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--steam-blue)', display: 'inline-block' }} />
-              Free Windows App
-            </span>
-          </div>
-
           {/* Headline */}
           <h1 className="fade-up fade-up-2" style={{
             fontFamily: 'var(--font-display)',
