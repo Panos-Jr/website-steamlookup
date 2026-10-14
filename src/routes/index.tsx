@@ -1,5 +1,6 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
 import { SteamIcon } from '../components/icons'
+import { useState, useEffect } from 'react'
 
 export const Route = createFileRoute('/')({
   component: HomePage,
@@ -96,6 +97,19 @@ function ChevronRightIcon({ size = 16 }: { size?: number }) {
 }
 
 export default function HomePage() {
+  const [version, setVersion] = useState<string | null>(null)
+
+  useEffect(() => {
+    fetch('https://raw.githubusercontent.com/Panos-Jr/SteamLookup/refs/heads/main/version.txt')
+      .then((res) => res.text())
+      .then((text) => setVersion(text.trim()))
+      .catch(() => setVersion(null))
+  }, [])
+
+  const downloadUrl = version
+    ? `https://github.com/Panos-Jr/SteamLookup/releases/download/${version}/SteamLookup_setup.exe`
+    : '#'
+
   return (
     <div style={{ position: 'relative', zIndex: 1, minHeight: '100vh' }}>
       {/* Nav */}
@@ -196,7 +210,7 @@ export default function HomePage() {
 
           {/* CTA buttons */}
           <div className="fade-up fade-up-4" style={{ display: 'flex', justifyContent: 'center', gap: 14, flexWrap: 'wrap' }}>
-            <a href="https://github.com/Panos-Jr/SteamLookup/releases/download/v1.8/SteamLookup_setup.exe" className="btn-primary">
+            <a href={downloadUrl} className="btn-primary">
               <DownloadIcon size={18} />
               Download SteamLookup_setup.exe
             </a>
