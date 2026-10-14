@@ -95,10 +95,10 @@ function ChevronRightIcon({ size = 16 }: { size?: number }) {
     </svg>
   )
 }
-
+0
 export default function HomePage() {
   const [version, setVersion] = useState<string | null>(null)
-
+//obtain version
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/Panos-Jr/SteamLookup/refs/heads/main/version.txt')
       .then((res) => res.text())
